@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="scss/style-rgister.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.0/css/all.min.css"
+        integrity="sha512-ykRBEJhyZ+B/BIJcBuOyUoIxh0OfdICfHPnPfBy7eIiyJv536ojTCsgX8aqrLQ9VJZHGz4tvYyzOM0lkgmQZGw=="
+        crossorigin="anonymous" />
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container_rgister">
+        <header class="hero">
+            <a href="/">
+                <i class="fas fa-chevron-circle-left back-btn"></i>
+            </a>
+
+            <div class="hero-info">
+                <h1 class="name">Contact Form Send</h1>
+                <p class="relationship-hero">Message</p>
+            </div>
+        </header>
+
+        <section class="contact-info">
+            <form action="/contact" method="POST">
+                <div>
+                    <div class="info-line">
+                        <input class="type" type="text" value="" required placeholder="Full Name" name="fulname" />
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <input class="type" type="email" value="" required placeholder="Email" name="email" />
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <input class="type" type="number" value="" required placeholder="Phone No" name="phone" />
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <input class="type" type="number" value="" placeholder="your age" name="age" />
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <input class="type" required type="text" value="" placeholder="your city" name="city" />
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <textarea class="type" type="text" value="" name="message"
+                            placeholder="your message"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <div class="info-line">
+                        <label class="radio inline">
+                            <input type="radio" name="gender" value="male" checked />
+                            <span>Male</span>
+                        </label>
+                        <label class="radio inline">
+                            <input type="radio" name="gender" value="female" />
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+
+                <section class="button-container">
+                    <input class="button" type="submit" value="Submit" />
+                </section>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
